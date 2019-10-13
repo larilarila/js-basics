@@ -13,7 +13,7 @@ function getWeather(lat, lng) {
     .then(function(json) {
       const temperature = json.main.temp;
       const place = json.name;
-      weather.innerText = `${temperature} @ ${place}`;
+      weather.innerText = `${temperature}°C @ ${place}`;
     }); // then은 데이터가 완전히 들어온 후에 함수 호출함
 } //메일이 새로고침없이 데이터 들어오는 것은 얘때문
 
